@@ -1,0 +1,35 @@
+README
+------
+
+espic1d.c and display.c are programs released under the GNU GPL ver 2 or later.
+
+E-Mail:letapk@gmail.com
+Download: https://letapk.wordpress.com
+See the file COPYING for details
+
+espic1d is a 1-D electrostatic PIC code, for non-relativistic electrons mobile along the x-axis,
+the ions are stationary. The electric field is along the x-axis, and a constant magnetic field
+is present along the z-axis.
+
+It uses CGS units everywhere.
+
+Compile:
+gcc espic1d.c -lm -o espic1d
+
+Run:
+$> ./espic1d
+
+------
+
+display.c is a code for the display of data created by espic1d.
+It uses Gnuplot for creating the graphs. This should be accessible from the path.
+
+Compile:
+gcc display.c -lm -o display
+
+Run:
+$> ./display <argument>
+
+See the comments inside the code further information.
+
+
